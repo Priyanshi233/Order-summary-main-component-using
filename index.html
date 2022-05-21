@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Red Hat Display' rel='stylesheet'>
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <style>
+    @media screen and (max-width:380px){
+      body {
+        background: url('./images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-color: rgb(224,232,255);
+    }
+    }
+   body{
+     background-color: rgb(224,232,255);
+     background-image: url("./images/pattern-background-desktop.svg");
+     background-repeat: repeat-x;
+   }
+   .box{
+     width: 340px;
+     max-width: 380px;
+     height: 530px;
+     background-color: white;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 20px;
+     margin-top: 20px;
+   }
+   .hero-img{
+    width: 340px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   }
+   .first-text{
+     font-family: 'Red Hat Display';
+     font-weight: 900;
+     font-size: 1.7rem;
+     color: hsl(223, 47%, 23%);
+     text-align: center;
+   }
+   .second-text{
+     font-family: 'Red Hat Display';
+     font-weight: 700;
+     font-size: 16px;
+     color: hsl(224, 23%, 55%);
+     text-align: center;
+     margin-top: 2px;
+   }
+   .small-box{
+     width: 280px;
+     height: 70px;
+     background-color: hsl(225, 100%, 98%);
+     margin-right: auto;
+     margin-left: auto;
+     border-radius: 10px;
+     display: flex;
+   }
+   .music-pic{
+     width: 40px;
+     height: 40px;
+     margin-left: 20px;
+     margin-top: 12px;
+   }
+   .music-text1{
+    font-family: 'Red Hat Display';
+     font-weight:bolder;
+     font-size: 14px;
+     color: hsl(223, 47%, 23%);
+     text-align: center;
+   }
+   .music-text2{
+    font-family: 'Red Hat Display';
+     font-weight:bolder;
+     font-size: 14px;
+     color: hsl(224, 23%, 55%);
+     text-align: center;
+   }
+   .music{
+     margin-left:13px;
+     margin-top: 13px;
+   }
+   .change{
+     margin-left: 65px;
+     margin-top: 21px;
+     font-family: 'Red Hat Display';
+     font-weight:bold;
+     color: hsl(245, 75%, 52%);
+     text-decoration: underline;
+   }
+   .change:hover{
+    opacity: 0.7;
+    cursor: pointer;
+   }
+   .proceed{
+    width: 280px;
+     height: 40px;
+     margin: auto;
+     margin-top: 30px;
+     background-color: hsl(245, 75%, 52%);
+     color: white;
+     font-family: 'Red Hat Display';
+     border-radius: 10px;
+     text-align: center;
+     font-size: 14px;
+     line-height: 40px;
+   }
+   .proceed:hover{
+    box-shadow: 5px 10px 11px;
+    opacity: 0.9;
+    cursor: pointer;
+   }
+   .cancel{
+    font-family: 'Red Hat Display';
+     font-weight:bolder;
+     font-size: 14px;
+     color: hsl(224, 23%, 55%);
+     text-align: center;
+     margin-top: 20px;
+   }
+   .cancel:hover{
+    opacity: 0.7;
+    cursor: pointer;
+   }
+  </style>
+</head>
+<body>
+<main>
+  <div>
+    <div class="box">
+      <img src="images/illustration-hero.svg" class="hero-img" alt="music-hero-image">
+      <h1 class="first-text">Order Summary</h1>
+      <h4 class="second-text">You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</h4>
+        <div class="small-box">
+<img src="images/icon-music.svg" alt="music-icon" class="music-pic">
+<div class="music">
+  <div class="music-text1">Annual Plan</div>
+  <div class="music-text2">$59.99/year</div>
+</div>
+<div class="change">Change</div>
+        </div>
+        <div class="proceed">Proceed to Payment</div>
+        <div class="cancel">Cancel Order</div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
